@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "employee-management",
+    "imageUrl": "/images/employeeManagement.png",
+    "github": "https://github.com/Ghibrasoft/Employee-Management",
+    "demo": ""
+  },
+  {
+    "id": 2,
+    "name": "callapp",
+    "imageUrl": "/images/callapp.png",
+    "github": "https://github.com/Ghibrasoft/callapp",
+    "demo": ""
+  },
+  {
+    "id": 3,
+    "name": "todos",
+    "imageUrl": "/images/todos.png",
+    "github": "https://github.com/Ghibrasoft/sk-hwork_14-MERN-app-with-CRUD-",
+    "demo": ""
+  },
+  {
+    "id": 4,
+    "name": "jwt-auth",
+    "imageUrl": "/images/jwtAuth.png",
+    "github": "https://github.com/Ghibrasoft/JWT_authPractice",
+    "demo": ""
+  },
+  {
+    "id": 5,
+    "name": "cavea",
+    "imageUrl": "/images/cavea.png",
+    "github": "https://github.com/Ghibrasoft/cavea",
+    "demo": ""
+  },
+  {
+    "id": 6,
+    "name": "ecommerce",
+    "imageUrl": "/images/ecommerceImg.png",
+    "github": "https://github.com/Ghibrasoft/E-Commerce-app",
+    "demo": "https://mellifluous-tanuki-403014.netlify.app/"
+  },
+  {
+    "id": 7,
+    "name": "superchat",
+    "imageUrl": "/images/superchatImg.png",
+    "github": "https://github.com/Ghibrasoft/superchat-app",
+    "demo": "https://lucent-biscotti-31275f.netlify.app/"
+  },
+  {
+    "id": 8,
+    "name": "snapshot",
+    "imageUrl": "/images/snapshotImg.png",
+    "github": "https://github.com/Ghibrasoft/Snapshot-app",
+    "demo": "https://guileless-quokka-fdd54b.netlify.app/"
+  },
+  {
+    "id": 9,
+    "name": "article",
+    "imageUrl": "/images/articleImg.png",
+    "github": "https://github.com/Ghibrasoft/Article-app",
+    "demo": "https://glistening-longma-357a73.netlify.app/"
+  },
+  {
+    "id": 10,
+    "name": "tictactoe",
+    "imageUrl": "/images/tictactoeImg.png",
+    "github": "https://github.com/Ghibrasoft/Tic-Tac-Toe-App",
+    "demo": "https://ubiquitous-axolotl-0d1542.netlify.app/"
+  },
+  {
+    "id": 11,
+    "name": "post-a-comment",
+    "imageUrl": "/images/postAComment.png",
+    "github": "https://github.com/Ghibrasoft/Post-a-comment",
+    "demo": "https://coruscating-marshmallow-8536e4.netlify.app/"
+  },
+  {
+    "id": 12,
+    "name": "weather",
+    "imageUrl": "/images/weather.png",
+    "github": "https://github.com/Ghibrasoft/Weather-app",
+    "demo": "https://taupe-profiterole-020c1f.netlify.app/"
+  }
+]
