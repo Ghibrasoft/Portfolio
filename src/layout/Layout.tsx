@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 
 type LayoutProps = {
     children: ReactNode;
@@ -14,9 +15,14 @@ function Layout({ children, lightMode, setLightMode }: LayoutProps) {
             <header>
                 <Navbar lightMode={lightMode} setLightMode={setLightMode} />
             </header>
-            <main className="flex-1 px-4">
+            <motion.main className="flex-1 px-4"
+                initial={{ opacity: 0, y: 50 }}   // initial animation state
+                animate={{ opacity: 1, y: 0 }}   // animation to apply when comp. enters the viewport
+                exit={{ opacity: 0, y: -50 }}   // animation to apply when comp. exits the viewport
+                transition={{ duration: 0.5 }}   // animation duration
+            >
                 {children}
-            </main>
+            </motion.main>
             <Footer />
         </div>
     );

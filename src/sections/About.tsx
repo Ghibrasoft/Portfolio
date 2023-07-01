@@ -1,6 +1,5 @@
 import { AiFillMessage } from "react-icons/ai";
 
-
 export default function About() {
     return (
         <section id="about" className="h-screen flex justify-center items-center">

@@ -1,7 +1,6 @@
 import { AiFillLinkedin, AiFillGithub, AiFillMail, AiFillPhone, AiFillProfile } from "react-icons/ai";
 import DavidGhibradzeCV from "../assets/DavidGhibradzeCV.pdf";
 
-
 export default function Footer() {
     return (
         <footer className={`flex justify-between items-center h-12 border-t shadow-lg fixed bottom-0 w-full text-white border-gray-300 bg-slate-700`}>
