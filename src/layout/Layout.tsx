@@ -11,20 +11,17 @@ type LayoutProps = {
 function Layout({ children, lightMode, setLightMode }: LayoutProps) {
 
     return (
-        <div className={`flex flex-col min-h-screen ${lightMode ? "bg-white" : "bg-slate-700 text-white"}`}>
+        <motion.div
+            key={lightMode ? "light" : "dark"}
+            className={`flex flex-col min-h-screen ${lightMode ? "bg-white" : "bg-slate-800 text-white"} overflow-x-hidden`}>
             <header>
                 <Navbar lightMode={lightMode} setLightMode={setLightMode} />
             </header>
-            <motion.main className="flex-1 px-4"
-                initial={{ opacity: 0, y: 50 }}   // initial animation state
-                animate={{ opacity: 1, y: 0 }}   // animation to apply when comp. enters the viewport
-                exit={{ opacity: 0, y: -50 }}   // animation to apply when comp. exits the viewport
-                transition={{ duration: 0.5 }}   // animation duration
-            >
+            <main className="flex-1 px-4">
                 {children}
-            </motion.main>
+            </main>
             <Footer />
-        </div>
+        </motion.div>
     );
 };
 

@@ -48,8 +48,7 @@ export default function Navbar({ lightMode, setLightMode }: NavbarProps) {
     }, []);
 
     return (
-        <nav className={`flex justify-between items-center fixed w-full h-12 shadow-lg z-10 ${lightMode ? "text-white bg-slate-700" : "text-black bg-white"}`}>
-
+        <nav className={`flex justify-between items-center fixed w-full h-12 shadow-lg z-10 ${lightMode ? "text-white bg-slate-800" : "text-black bg-white"}`}>
             {/* desktop navbar */}
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -67,6 +66,7 @@ export default function Navbar({ lightMode, setLightMode }: NavbarProps) {
                     >
                         {navId.charAt(0).toUpperCase() + navId.slice(1)}
                     </motion.a>
+
                 ))}
 
             </motion.div>
@@ -96,15 +96,18 @@ export default function Navbar({ lightMode, setLightMode }: NavbarProps) {
 
 
             {/* mobile menu */}
-            <div className={!openNav ? "hidden" : "bg-gray-900 text-white flex flex-col justify-center items-center w-full h-screen absolute top-0 left-0"}>
+            <div className={!openNav ? "hidden" : "bg-slate-800 text-white flex flex-col justify-center items-center w-full h-screen absolute top-0 left-0"}>
                 {
                     sectionIds.map((navId) => (
                         <a
                             key={navId}
                             href={`#${navId}`}
                             onClick={() => setOpenNav(false)}
-                            className="py-5 text-3xl">
+                            className="relative py-5 text-3xl hover:text-indigo-500 transition-colors">
                             {navId.charAt(0).toUpperCase() + navId.slice(1)}
+                            <span className="absolute -top-0 left-0 w-full h-full flex items-center justify-center text-[4rem] text-slate-500/30  opacity-0 hover:opacity-100 tracking-[3rem] hover:tracking-widest transition-all duration-200">
+                                {navId.charAt(0).toUpperCase() + navId.slice(1)}
+                            </span>
                         </a>
                     ))
                 }
